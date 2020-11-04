@@ -18,7 +18,6 @@
 
 soong_namespace {
 }
-
 cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.fm@1.0",
 	owner: "xiaomi",
@@ -34,6 +33,7 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
